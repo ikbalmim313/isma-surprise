@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A little world, just for you ♡</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;background:#100d19;color:#f7efff;
+ font-family:system-ui,sans-serif;line-height:1.7
+}
+.hero{
+ min-height:90vh;display:flex;flex-direction:column;
+ align-items:center;justify-content:center;text-align:center;
+ padding:30px 20px;
+ background:radial-gradient(ellipse at top,#493264,transparent 70%)
+}
+h1{font:normal clamp(42px,10vw,65px) Georgia,serif;line-height:1.15}
+h2{font:normal 30px Georgia,serif}
+p{color:#cbbbdc}
+a,button{
+ display:inline-block;padding:12px 18px;margin:5px;
+ border-radius:30px;border:1px solid #a987cf;
+ color:#f7efff;background:#30223f;text-decoration:none;
+ font-size:15px
+}
+main{max-width:680px;margin:auto;padding:20px}
+section{padding:35px 0;scroll-margin-top:15px}
+.card{background:#1c1728;border:1px solid #392b49;border-radius:18px;padding:20px}
+.eyebrow{color:#c9a7ff;letter-spacing:3px;font-size:12px}
+#secret{display:none}
+#secret.open{display:block}
+footer{text-align:center;padding:30px;color:#cbbbdc}
+</style>
+</head>
+<body>
+<header class="hero">
+ <p>✦ · ✧ · ✦</p>
+ <p class="eyebrow">A TINY CORNER OF THE UNIVERSE</p>
+ <h1>A little world,<br>just for you.</h1>
+ <p>For Isma, from somewhere under the same sky. ♡</p>
+ <a href="#letter">Read your letter 💌</a>
+ <a href="#surprise">Your little surprise 🎁</a>
+ <p>Made with care, especially for you.</p>
+</header>
+
+<main>
+<section id="letter">
+ <p class="eyebrow">01 · FROM MY HEART</p>
+ <h2>A letter for you 💌</h2>
+ <div class="card">
+ Hey Isma,
+
+ I wanted to make you something different,
+ something you can open whenever you want.
+
+ Even with miles between us, I'm glad our paths
+ crossed. I hope this little corner makes you smile
+ and reminds you that you matter to me.
+
+ I hope your days bring you peace, happiness,
+ and plenty of reasons to smile.
+
+ Take care of yourself, okay? ♡
+ </div>
+</section>
+
+<section id="story">
+ <p class="eyebrow">02 · TWO PLACES, ONE SKY</p>
+ <h2>Our little story 🌍</h2>
+ <div class="card">
+ <p>🇮🇳 India — one side of our story.</p>
+ <p>🇰🇪 Kenya — another side of our story.</p>
+ <p>Different places, one big world, and little
+ moments shared across the distance.</p>
+ <p>Distance is part of our story, not the whole story. ♡</p>
+ </div>
+</section>
+
+<section id="surprise">
+ <p class="eyebrow">03 · JUST FOR YOU</p>
+ <h2>A little surprise 🎁</h2>
+ <div class="card">
+ <p>There's something waiting behind this button.</p>
+ <button id="reveal">Open when you're ready ✨</button>
+ <div id="secret">
+ <h2>Surprise, Isma! ♡</h2>
+ <p>I made this little world just for you.</p>
+ <p>I hope it brings a smile to your face.
+ You deserve lovely things and peaceful days.
+ Never forget to take care of yourself. ❤️</p>
+ <p>Sending a little happiness from India to Kenya. 🇮🇳🇰🇪</p>
+ </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <p>✧ · ♡ · ✧</p>
+ Made with care, just for Isma.
+</footer>
+
+<script>
+document.getElementById("reveal").addEventListener("click",function(){
+ const secret=document.getElementById("secret");
+ secret.classList.toggle("open");
+ this.textContent=secret.classList.contains("open")
+ ? "Close the surprise ♡" : "Open when you're ready ✨";
+});
+</script>
+</body>
+  </html>
+  
